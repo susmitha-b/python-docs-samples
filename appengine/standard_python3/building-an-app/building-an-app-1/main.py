@@ -15,12 +15,25 @@
 # [START gae_python38_render_template]
 # [START gae_python3_render_template]
 import streamlit as st
+import speech_recognition as sr
+import pyttsx3
 
 def main():
     """Deploying Streamlit App with App Engine on GCP"""
 
     st.title("Streamlit App")
-    st.header("Deploying Streamlit with App Engine on GCP")
+    st.header("Speech-to-Text & Audio-to-Speech Recognition")
+
+    activities = ["Speech-to-Text", "Audio-to-Speech]
+
+    choices = st.sidebar.selectbox('Select Activities',activities)
+
+    if choices =='Speech-to-Text':
+         st.subheader("Speech-to-Text")
+
+    elif choices =='Audio-to-Speech':
+       st.subheader("Audio-to-Speech)
+    
 
    
 
