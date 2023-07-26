@@ -32,7 +32,7 @@ def main():
          st.subheader("Speech-to-Text")
 
     elif choices =='Audio-to-Speech':
-       st.subheader("Audio-to-Speech)
+       st.subheader("Audio-to-Speech")
     
 
    
