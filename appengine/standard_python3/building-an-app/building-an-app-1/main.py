@@ -24,15 +24,15 @@ def main():
     st.title("Streamlit App")
     st.header("Speech-to-Text & Audio-to-Speech Recognition")
 
-    activities = ["Speech-to-Text", "Audio-to-Speech"]
+    activities = ["Speech-to-Text", "Text-to-Speech"]
 
     choices = st.sidebar.selectbox('Select Activities',activities)
 
     if choices =='Speech-to-Text':
          st.subheader("Speech-to-Text")
 
-    elif choices =='Audio-to-Speech':
-       st.subheader("Audio-to-Speech")
+    elif choices =='Text-to-Speech':
+       st.subheader("Text-to-Speech")
     
 
    
