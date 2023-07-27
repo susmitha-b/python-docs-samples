@@ -19,7 +19,7 @@
 
 window.addEventListener('load', function () {
 
-  console.log("Hello World!");
+  console.log("Welcome!!");
 
 });
 // [END gae_python3_log]
