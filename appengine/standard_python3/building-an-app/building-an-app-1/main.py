@@ -21,8 +21,11 @@ import pyttsx3
 def main():
     """Deploying Streamlit App with App Engine on GCP"""
 
-    st.title("Streamlit App")
-    st.header("Speech-to-Text & Audio-to-Speech Recognition")
+    st.title("Streamlit Application")
+    st.header("Speech-to-Text & Text-to-Speech Recognition")
+
+    st.set_page_config(page_title="Streamlit Application", page_icon="📖", layout="wide")
+    st.header("Speech-to-Text & Text-to-Speech ")
 
     activities = ["Speech-to-Text", "Text-to-Speech"]
 
