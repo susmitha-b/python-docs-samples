@@ -14,11 +14,15 @@
 
 # [START gae_python38_render_template]
 # [START gae_python3_render_template]
+from flask import Flask, render_template
 import streamlit as st
 import speech_recognition as sr
 import pyttsx3
 
-def main():
+app = Flask(__name__)
+
+@app.route("/")
+def root():
     """Deploying Streamlit App with App Engine on GCP"""
 
     st.title("Streamlit Application")
@@ -36,10 +40,6 @@ def main():
 
     elif choices =='Text-to-Speech':
        st.subheader("Text-to-Speech")
-    
-
-   
-
 
 if __name__ == "__main__":
     # This is used when running locally only. When deploying to Google App
